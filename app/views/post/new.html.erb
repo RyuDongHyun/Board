@@ -1,0 +1,14 @@
+<h1>새글작성하기</h1>
+<form action="/post/create">
+  <div class="form-group">
+    <label for="exampleInputEmail1">제목</label>
+    <input name="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="제목을 입력하시오.">
+  </div>
+  <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="내용을 입력하시오."></textarea>
+  <div class="form-group">
+    <label for="exampleInputPassword1">태그</label>
+    <input name="tag" type="text" class="form-control" id="exampleInputPassword1" placeholder="태그를 달아주세요. ex)#ruby">
+  </div>
+
+  <button type="submit" class="btn btn-primary">작성</button>
+</form>

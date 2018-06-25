@@ -1,0 +1,19 @@
+<h1>메인화면</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">번호</th>
+      <th scope="col">제목</th>
+      <th scope="col">작성일자</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @posts.reverse.each do |p|%>
+    <tr>
+      <th scope="row"><%= p.id%></th>
+      <td><a href="/post/show/<%= p.id%>"><%= p.title%></a></td>
+      <td><%= time_ago_in_words(p.created_at)%></td>
+    </tr>
+    <% end%>
+  </tbody>
+</table>

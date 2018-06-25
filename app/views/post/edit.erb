@@ -1,0 +1,13 @@
+<form action="/post/update/<%= @post.id%>">
+  <div class="form-group">
+    <label for="exampleInputEmail1">제목</label>
+    <input name="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%= @post.title%>">
+  </div>
+  <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="8"><%= @post.content%></textarea>
+  <div class="form-group">
+    <label for="exampleInputPassword1">태그</label>
+    <input name="tag" type="text" class="form-control" id="exampleInputPassword1" value="<%= @post.tag%>">
+  </div>
+
+  <button type="submit" class="btn btn-primary">수정</button>
+</form>
